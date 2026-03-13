@@ -306,7 +306,7 @@ int main(int argc, char **argv) {
     while (wl_display_dispatch(display) != -1) {
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
-        render_text("Hello Wayland", 100.0f, 300.0f, 1.0f, 1.0f, 1.0f, 1.0f);
+        render_text("Hello, World!", 100.0f, 300.0f, 1.0f, 1.0f, 1.0f, 1.0f);
         eglSwapBuffers(egl_display, egl_surface);
     }
 
